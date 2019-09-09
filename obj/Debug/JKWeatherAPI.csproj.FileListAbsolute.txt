@@ -1,0 +1,7 @@
+S:\Repository\Apps\JKWeatherAPI\JKWeatherAPI\bin\JKWeatherAPI.dll.config
+S:\Repository\Apps\JKWeatherAPI\JKWeatherAPI\bin\JKWeatherAPI.dll
+S:\Repository\Apps\JKWeatherAPI\JKWeatherAPI\bin\JKWeatherAPI.pdb
+S:\Repository\Apps\JKWeatherAPI\JKWeatherAPI\obj\Debug\JKWeatherAPI.csprojAssemblyReference.cache
+S:\Repository\Apps\JKWeatherAPI\JKWeatherAPI\obj\Debug\JKWeatherAPI.csproj.CoreCompileInputs.cache
+S:\Repository\Apps\JKWeatherAPI\JKWeatherAPI\obj\Debug\JKWeatherAPI.dll
+S:\Repository\Apps\JKWeatherAPI\JKWeatherAPI\obj\Debug\JKWeatherAPI.pdb
