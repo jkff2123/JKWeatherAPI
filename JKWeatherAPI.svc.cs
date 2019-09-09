@@ -33,7 +33,7 @@ namespace JKWeatherAPI
 
         public void GetCurrentWeather(float latitude, float longitude)
         {
-            IWeatherSource weatherAPI = new OpenWeatherAPI();
+            IWeatherSource weatherAPI = new OpenWeatherAPI("Enter your OpenWhether API key");
             weatherAPI.GetCurrentWeather(latitude, longitude);
         }
     }
