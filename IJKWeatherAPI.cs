@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using JKWeatherAPI.WeatherSource;
 
 namespace JKWeatherAPI
 {
@@ -20,7 +21,7 @@ namespace JKWeatherAPI
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         [OperationContract]
-        void GetCurrentWeather(float latitude, float longitude);
+        CurrentWeather GetCurrentWeather(float latitude, float longitude);
         // TODO: 여기에 서비스 작업을 추가합니다.
     }
 

@@ -31,10 +31,11 @@ namespace JKWeatherAPI
             return composite;
         }
 
-        public void GetCurrentWeather(float latitude, float longitude)
+        public CurrentWeather GetCurrentWeather(float latitude, float longitude)
         {
             IWeatherSource weatherAPI = new OpenWeatherAPI("Enter your OpenWhether API key");
-            weatherAPI.GetCurrentWeather(latitude, longitude);
+
+            return weatherAPI.GetCurrentWeather(latitude, longitude);
         }
     }
 }

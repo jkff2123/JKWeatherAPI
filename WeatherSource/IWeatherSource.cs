@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Runtime.Serialization;
+using System.ServiceModel;
 
 namespace JKWeatherAPI.WeatherSource
 {
@@ -38,14 +40,18 @@ namespace JKWeatherAPI.WeatherSource
         }
     }
 
+    [DataContract]
     public class CurrentWeather
     {
         private string _location;
         private string _country;
         private WeatherInfo _weatherInfo;
 
+        [DataMember]
         public string Location { get { return _location; } set { _location = value; } }
+        [DataMember]
         public string Country { get { return _country; } set { _country = value; } }
+        [DataMember]
         public WeatherInfo Weather { get { return _weatherInfo; } set { _weatherInfo = value; } }
 
         public CurrentWeather(string location, string country, WeatherInfo weatherInfo)
@@ -56,14 +62,18 @@ namespace JKWeatherAPI.WeatherSource
         }
     }
 
+    [DataContract]
     public class WeeklyWeather
     {
         private string _location;
         private string _country;
-        private WeatherInfo[] _weatherInfo = new WeatherInfo[7];
+        private WeatherInfo[] _weatherInfo;
 
+        [DataMember]
         public string Location { get { return _location; } set { _location = value; } }
+        [DataMember]
         public string Country { get { return _country; } set { _country = value; } }
+        [DataMember]
         public WeatherInfo[] Weather { get { return _weatherInfo; } set { _weatherInfo = value.Length == 7 ? value : null; } }
 
         public WeeklyWeather(string location, string country, WeatherInfo[] weatherInfo)
